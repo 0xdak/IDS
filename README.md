@@ -1,30 +1,9 @@
-# µIDS
-simple python network-based signature intrusion detection system
+# µIDS_GUI
+Visualization of simple python network-based signature intrusion detection system
 
-## Required Packages
-* scapy
-* netifaces
+## Warning
+I'm just changing the code to something that works for me in my project and visualizing it.
 
-## Install && Testing
-    git clone ../acsl_IDS.git
-    python3 -m venv acsl_IDS
-    cd acsl_IDS
-    pip3 install -r requirements.txt
-    sudo python3 main.py wlp4s0 default.rules
+The original code is below.:
 
-## Running sender.py
-    sudo python3 sender.py enp0s8
-
-## Rules
-
-list of rules in default.rules
-
-list evaluation-rules in eval.rules
-
-structure
-
-    PROTO [!]IP|any:[!]PORT(RANGE)|any <>|-> [!]IP|any:[!]PORT(RANGE)|any *PAYLOAD
-
-example
-
-    ICMP 192.168.178.22:any -> 1.1.1.1:[500-510] * # -IDS
+https://github.com/dreizehnutters/-IDS
